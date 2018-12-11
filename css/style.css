@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Helveticaneue';
+    src: url('/font/oswald.regular.ttf');
+}
+/* about */
+.model_image> .col-lg-2{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.img-fluid{
+    width: 100%;
+}
+.about_info{
+    height: 700px;
+}
+.about_left {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.about_right{
+    background: url("../image/about_right.png") no-repeat right bottom;
+}
+.about_detail{
+    color: white;
+}
+.about_right{
+    background-color: #000000;
+}
+
