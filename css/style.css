@@ -212,7 +212,68 @@ body{
 #video_source4{
     display: none;
 }
-
+.menu{
+    background-color: #0000009c;
+    color: #686768;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    display: none;
+    transition: 0.2s ease-in-out;
+    width: 92%;
+}
+.logo_right {
+    border-bottom: 3px dashed white;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 10px;
+    width: 20%;
+    text-align: right;
+    padding-top: 10px;
+}
+.menu_bar{
+    width: 20%;
+    position: relative;
+    padding-right: 10px;
+}
+.menu_bar> ul > a {
+    list-style: none;
+    text-align: right;
+    padding-top: 21px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #e1e5ea9c;
+}
+.menu_bar> ul > a >li{
+    padding-top: 21px;
+}
+.menu_bar> ul > a :hover{
+    color: white;
+}
+.menu_bar> ul > li :active:focus{
+    color: white;
+}
+.menu_bar > p{
+    padding-top: 20%;
+    text-align: right;
+    color: #e1e5ea9c;
+}
+.menu_bar > p:hover{
+    color: white;
+}
+p.address {
+    width: 64%;
+    position: absolute;
+    text-align: right;
+    right: 0px;
+    color: #e1e5ea9c
+}
+p.address:hover{
+    color: white;
+}
 /* slider */
 .slider4,
 .slider3,

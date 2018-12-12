@@ -41,4 +41,21 @@ $(document).ready(function () {
     $('#video_source3').css('display', 'none')
   });
 
+  $(".hamburger").on("click",function(){
+      $(".menu").toggle();
+      console.log($(".menu").css("display") );
+      if($(".menu").css("display") == "block"){
+        $(".header_right > span").css( {
+            "top": "-25px",
+            "right": "104%",
+        });
+      }else{
+        $(".header_right > span").css( {
+            "top": "0px",
+            "right": "2%",
+        }); 
+      }
+    
+  })
+
 })
