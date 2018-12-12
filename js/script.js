@@ -1,19 +1,44 @@
 $(document).ready(function () {
-    var video1 = document.getElementById("myVideo1");
-    var video2 = document.getElementById("myVideo2");
-    var video3 = document.getElementById("myVideo3");
-    var video4 = document.getElementById("myVideo4");
+  var video1 = document.getElementById('video_source')
+  var video2 = document.getElementById('video_source2')
+  var video3 = document.getElementById('video_source3')
+  var video4 = document.getElementById('video_source4')
 
-    var btn1 = document.getElementById("01");
-    var btn2 = document.getElementById("02");
-    var btn3 = document.getElementById("03");
-    var btn4 = document.getElementById("04");
+  $('#number1').on('click', function () {
+    if (video1.paused) {
+      video1.play()
+    }
+    $('#video_source').css('display', 'unset')
+    $('#video_source2').css('display', 'none')
+    $('#video_source3').css('display', 'none')
+    $('#video_source4').css('display', 'none')
+  })
+  $('#number2').on('click', function () {
+    if (video2.paused) {
+      video2.play()
+    }
+    $('#video_source2').css('display', 'unset')
+    $('#video_source').css('display', 'none')
+    $('#video_source3').css('display', 'none')
+    $('#video_source4').css('display', 'none')
+  })
+  $('#number3').on('click', function () {
+    if (video3.paused) {
+      video3.play()
+    }
+    $('#video_source3').css('display', 'unset')
+    $('#video_source').css('display', 'none')
+    $('#video_source2').css('display', 'none')
+    $('#video_source4').css('display', 'none')
+  })
+  $('#number4').on('click', function () {
+    if (video4.paused) {
+      video4.play()
+    }
+    $('#video_source4').css('display', 'unset')
+    $('#video_source').css('display', 'none')
+    $('#video_source2').css('display', 'none')
+    $('#video_source3').css('display', 'none')
+  });
 
-    btn1.on("click", function () {
-        if (video1.paused) {
-            video1.play();
-        } else {
-            video1.pause();
-        }
-    });
-});
+})

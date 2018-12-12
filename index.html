@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- my css -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -22,78 +21,83 @@
     <div class="top_header">
         <!--Carousel Wrapper-->
         <div class="video">
-            <div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
-                <!--Indicators-->
-                <ol class="carousel-indicators">
-                    <li data-target="#video-carousel-example2" data-slide-to="0" class="active"></li>
-                    <li data-target="#video-carousel-example2" data-slide-to="1"></li>
-                    <li data-target="#video-carousel-example2" data-slide-to="2"></li>
-                    <li data-target="#video-carousel-example2" data-slide-to="3"></li>
-                </ol>
-                <!--/.Indicators-->
-                <!--Slides-->
-                <div class="carousel-inner" role="listbox">
-                    <!-- First slide -->
-                    <div class="carousel-item active">
-                        <!--Mask color-->
-                        <div class="view">
-                            <!--Video source-->
-                            <video class="video-fluid" autoplay loop muted>
-                                <source src="./video/video1.mp4" type="video/mp4" />
-                            </video>
-                            <div class="mask rgba-indigo-light"></div>
-                        </div>
-
-                        <!--Caption-->
-                        <div class="carousel-caption">
-                            <div class="animated fadeInDown">
-                                <h3 class="h3-responsive">Light mask</h3>
-                            </div>
-                        </div>
-                        <!--Caption-->
-                    </div>
-                    <!-- /.First slide -->
-
-                </div>
-                <!--/.Slides-->
-            </div>
+            <video id="video_source" autoplay loop muted>
+                <source src="./video/video1.mp4" type="video/mp4" />
+            </video>
+            <video id="video_source2" pause loop muted>
+                <source src="./video/video2.mp4" type="video/mp4" />
+            </video>
+            <video id="video_source3" pause loop muted>
+                <source src="./video/video1.mp4" type="video/mp4" />
+            </video>
+            <video id="video_source4" pause loop muted>
+                <source src="./video/video2.mp4" type="video/mp4" />
+            </video>
         </div>
         <!--Carousel Wrapper-->
-            <div class="row content">
-                <div class="header_left col-lg-2">
-                    <img src="./image/logo.png" alt="logo">
-                    <div class="number">
-                        <p id="01">01 <i class="fa fa-circle-o" aria-hidden="true"></i></p>
-                        <!-- <p id="02">02 <i class="fa fa-circle-o" aria-hidden="true"></i></p>
-                        <p id="03">03 <i class="fa fa-circle-o" aria-hidden="true"></i></p>
-                        <p id="04">04 <i class="fa fa-circle-o" aria-hidden="true"></i></p> -->
+        <div class="row content">
+            <div class="header_left col-lg-2">
+                <img src="./image/logo.png" alt="logo">
+                <div class="number">
+                    <div id="number1" class="text-center">
+                        <span>01</span>
+                        <div class="gray_circle_outer ">
+                            <div class="gray_circle"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="header_center col-lg-8">
-                    <h1>By Vilain</h1>
-                    <p>Cold calling can be a great way to generate qualiuty leads.
-                        You get to speak to the gate-keepers and stakeholders.</p>
-                    <div class="scroll-downs">
-                        <div class="mousey">
-                            <div class="scroller"></div>
+                    <div id="number2" class="text-center">
+                        <span>02</span>
+                        <div class="gray_circle_outer">
+                            <div class="gray_circle"></div>
+                        </div>
+                    </div>
+                    <div id="number3" class="text-center">
+                        <span>03</span>
+                        <div class="gray_circle_outer">
+                            <div class="gray_circle"></div>
+                        </div>
+                    </div>
+                    <div id="number4" class="text-center">
+                        <span>04</span>
+                        <div class="gray_circle_outer">
+                            <div class="gray_circle"></div>
                         </div>
                     </div>
                 </div>
-                <div class="header_right col-lg-2">
-                    <span class="hamburger"></span>
-                    <ul>
+            </div>
+            <div class="header_center col-lg-8">
+                <div class="text_header">
+                    <h1>By <strong>Vilain</strong></h1>
+                    <p>Cold calling can be a great way to generate qualiuty leads.
+                        You get to speak to the gate-keepers and stakeholders.</p>
+                </div>
+                <div class="scroll-downs">
+                    <div class="mousey">
+                        <div class="scroller"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_right col-lg-2">
+                <span class="hamburger"></span>
+                <ul>
+                    <a href="#">
                         <li>
                             facebook
                         </li>
+                    </a>
+                    <a href="#">
                         <li>
                             twitter
                         </li>
+                    </a>
+                    <a href="#">
                         <li>
                             youtube
                         </li>
-                    </ul>
-                </div>
+                    </a>
+                </ul>
             </div>
+        </div>
     </div>
     <div class="slider">
         <div class="container-fluid">
@@ -210,7 +214,7 @@
         </div>
     </div>
     <div class="footer">
-        <div class="container">
+        <div class="container footer_top">
             <div class="row">
                 <div class="logo_footer col-xs-12 col-sm-3 text-right">
                     <img src="./image/logo_footer.png" alt="logo">
@@ -251,12 +255,9 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
