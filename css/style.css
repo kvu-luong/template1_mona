@@ -256,6 +256,7 @@ body{
 }
 .slider3 h3{
     top: 119px;
+    margin-right: -27px;
 }
 .slider4 h3{
     bottom: 127px;
@@ -379,12 +380,17 @@ body{
     padding-top: 68px;
 }
 .logo_text> h4{
-    font-size: 22px;
+    font-size: 15px;
     color: #686768;
     
+}
+.logo_text> h5{
+    font-size: 14px;    
 }
 .footer_title{
     color:#898989;
 }
-
+.footer_top{
+    height: 278px;
+}
 
